@@ -14,7 +14,7 @@ export default function Header() {
                         <div className='text-[17px] josefin-sans flex items-center gap-10 '>
                             <Link to='/' className='hover:text-[#ff5600] cursor-pointer'>Home</Link>
                             <Link to='/about' className='hover:text-[#ff5600] cursor-pointer'>About</Link>                      
-                            <Link to='/contack' className='hover:text-[#ff5600] cursor-pointer'>Contack</Link>
+                            <Link to='/contack' className='hover:text-[#ff5600] cursor-pointer'>Contact</Link>
                             <button className='border-1 border-[#ff5600] rounded-lg p-3 cursor-pointer text-gray-400 text-[17px]'>Order Online</button>
                         </div>
                     </div>
