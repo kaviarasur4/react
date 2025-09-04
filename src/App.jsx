@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      <div className="overflow-hidden">
+      <div>
         <Approuter/>
       </div>
     </>

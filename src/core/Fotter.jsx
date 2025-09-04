@@ -51,7 +51,7 @@ export default function Fotter() {
                                     <p className='mr-10 mb-10'>Copyright ©2025 All rights reserved | This template is made with by <span className='text-[#ff5600] cursor-pointer'>Color Lib</span></p>
                                 </div>
                             </div>
-                            <div className='flex mb-30'>
+                            <div className='flex mb-30 gap-2'>
                                 <p className='pr-4 text-white'>Follow Us ----</p>
                                 <img src="/assets/images/instagrama.png" alt="gdg" className='w-[30px] h-[30px] bg-gray-700 p-0.5 rounded cursor-pointer' />
                                 <img src="/assets/images/twitter.png" alt="gdg" className='w-[30px] h-[30px] bg-gray-700 p-0.5 rounded cursor-pointer' />

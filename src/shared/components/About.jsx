@@ -1,12 +1,12 @@
 import React from 'react'
 
 export default function About() {
-  return (
-    <div className=''>
-     <div>
+    return (
+        <div className=''>
+            <div>
                 <div className="bg-[url('/assets/images/section.png')] h-100 w-full bg-no-repeat bg-center flex justify-center">
                     <div className='mt-20'>
-                        <p className='text-[#ff5600] text-center lg:text-[30px] text-[20px]'>Our Offerd Menu</p>
+                        <p className='text-[#ff5600] text-center lg:text-[30px] text-[20px] lg:mt-10 mt-5'>Our Offerd Menu</p>
                         <p className='lg:text-[45px] text-[25px] josefin-medium text-center'>Some trendy and popular <br /> courses offerd</p>
                         <div className='flex justify-center mt-5'>
                             <div className='poppins-medium lg:text-[20px] text-[15px] flex lg:gap-20 gap-5 items-center lg:flex-row flex-'>
@@ -19,6 +19,6 @@ export default function About() {
                     </div>
                 </div>
             </div>
-    </div>
-  )
+        </div>
+    )
 }
