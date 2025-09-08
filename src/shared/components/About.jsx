@@ -23,7 +23,7 @@ export default function About() {
                 aute irure m, quis nostrud exer.
               </p>
               <div className="flex md:flex-row flex-col gap-6">
-                <div className="flex items-center gap-5">
+                <div className="flex items-center gap-5"> 
                   <img
                     src="/assets/images/cooking.png"
                     alt="cook"
