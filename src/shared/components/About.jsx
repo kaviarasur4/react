@@ -15,6 +15,7 @@ export default function About() {
                                 <p className=''>breakfirst</p>
                                 <p className=''>dinner</p>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
