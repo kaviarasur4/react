@@ -8,8 +8,8 @@ export default function Contack() {
                     <h2 className='josefin-sans text-[50px]'>Contact Us</h2>
                 </div>
             </div>
-            <div className='flex justify-center mx auto'>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d16076.677845941937!2d79.48958173791524!3d11.852657764963384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1756983155325!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"/>
+            <div className='ml-2 mb-9'>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31228.71075686604!2d79.47890899498661!3d11.933675900821617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5356c0727b6b77%3A0x2c8815a4b312e5f3!2sViluppuram%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1756999352980!5m2!1sen!2sin" width="1500" height="450"/>
             </div>
             <div className='max-w-[1400px] h-full mx-auto flex justify-start '>
                 <div>
