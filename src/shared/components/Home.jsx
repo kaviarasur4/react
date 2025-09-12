@@ -61,7 +61,7 @@ export default function Home() {
                                 <p className=''>lunch</p>
                                 <p className=''>breakfirst</p>
                                 <p className=''>dinner</p>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -134,11 +134,11 @@ export default function Home() {
                         <p className='text-[#ff5600] lg:text-[20px] text-[20px] mb-10 text-center'>About Our Restaurant</ p>
                         <p className='lg:text-[49px] md:text-[40px] text-[30px] josefin-sans mb-[14px] text-center'>Book A Table</p>
                         <div>
-                            <div className='bg-[#ffffff] p-15 rounded'>
+                            <div className='bg-[#ffffff] lg:p-15 p-4 rounded'>
                                 <form className='flex flex-col gap-10 md:flex-row text-gray-500 '>
-                                    <input className='bg-gray-200 lg:px-20 px-20 lg:py-5 py-5 rounded  cursor-pointer text-[20px]' type="text" placeholder='name' />
-                                    <input className='bg-gray-200 px-20 py-5 rounded cursor-pointer text-[20px]' type="text" placeholder='date' />
-                                    <input className='bg-gray-200 px-20 py-5 rounded cursor-pointer text-[20px]' type="tel" placeholder='time' />
+                                    <input className='bg-gray-200 px-4 lg:py-5 py-5 rounded  cursor-pointer text-[20px]' type="text" placeholder='name' />
+                                    <input className='bg-gray-200 px-4 py-5 rounded cursor-pointer text-[20px]' type="text" placeholder='date' />
+                                    <input className='bg-gray-200 px-4 py-5 rounded cursor-pointer text-[20px]' type="tel" placeholder='time' />
                                     <button className='bg-[#ff5600] text-white font-medium px-20 py-5 rounded cursor-pointer text-[20px]'>Summit</button>
                                 </form>
                             </div>
@@ -146,7 +146,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className='text-center my-40'>
+            <div className='text-center lg:my-40'>
                 <p className='text-[#ff5600] mb-4 text-[16px] poppins-medium '>Services We Offer</p>
                 <p className='text-[49px] josefin-sans mb-[14px] '>Our Best Services</p>
             </div>
@@ -196,23 +196,29 @@ export default function Home() {
                 <div className='flex lg:flex-row flex-col lg:gap-8 justify-center lg:px-8 px-2'>
                     <div className='relative lg:mb-30 mb-15'>
                         <img src="/assets/images/blog1.png" alt="cook" className='rounderd w-full' />
-                        <div className='bg-gray-100 rounded lg:p-8 p-15 lg:ml-5 absolute -bottom-8 right-0 text-black hover:bg-[#ff5600] hover:text-white duration-300 cursor-pointer'>
-                            <p className='poppins-medium text-gray-500'>23 Dec,2020</p>
-                            <p className='josefin-sans lg:text-[20px] text-[18px]'>Addiction When Food Plate Becomes</p>
+                        <div className="bg-gray-100 rounded lg:p-8 p-15 lg:ml-5  absolute -bottom-8 right-0 text-black hover:bg-[#ff5600]  duration-300 cursor-pointer group">
+                            <p className="poppins-medium group-hover:text-white group-hover:">23 Dec,2020</p>
+                            <p className="josefin-sans lg:text-[20px] text-[18px] group-hover:text-white">
+                                Addiction When Food Plate Becomes
+                            </p>
                         </div>
                     </div>
                     <div className='relative  lg:mb-30 mb-15'>
                         <img src="/assets/images/blog2.png" alt="cook" className='rounderd w-full' />
-                        <div className='bg-gray-100 rounded lg:p-8 p-15 lg:ml-5 absolute -bottom-8 right-0 text-black hover:bg-[#ff5600] hover:text-white duration-300 cursor-pointer'>
-                            <p className='poppins-medium text-gray-500'>23 Dec,2020</p>
-                            <p className='josefin-sans lg:text-[20px] text-[18px]'>Addiction When Food Plate Becomes</p>
+                        <div className="bg-gray-100 rounded lg:p-8 p-15 lg:ml-5  absolute -bottom-8 right-0 text-black hover:bg-[#ff5600]  duration-300 cursor-pointer group">
+                            <p className="poppins-medium group-hover:text-white group-hover:">23 Dec,2020</p>
+                            <p className="josefin-sans lg:text-[20px] text-[18px] group-hover:text-white">
+                                Addiction When Food Plate Becomes
+                            </p>
                         </div>
                     </div>
                     <div className='relative  lg:mb-30 mb-15'>
                         <img src="/assets/images/blog3.png" alt="cook" className='rounderd w-full' />
-                        <div className='bg-gray-100 rounded lg:p-8 p-15 lg:ml-5  absolute -bottom-8 right-0 text-black hover:bg-[#ff5600] hover:text-white duration-300 cursor-pointer'>
-                            <p className='poppins-medium text-gray-500' >23 Dec,2020</p>
-                            <p className='josefin-sans lg:text-[20px] text-[18px]'>Addiction When Food Plate Becomes</p>
+                        <div className="bg-gray-100 rounded lg:p-8 p-15 lg:ml-5  absolute -bottom-8 right-0 text-black hover:bg-[#ff5600]  duration-300 cursor-pointer group">
+                            <p className="poppins-medium group-hover:text-white group-hover:">23 Dec,2020</p>
+                            <p className="josefin-sans lg:text-[20px] text-[18px] group-hover:text-white">
+                                Addiction When Food Plate Becomes
+                            </p>
                         </div>
                     </div>
                 </div>

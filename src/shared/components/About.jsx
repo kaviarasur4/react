@@ -73,7 +73,7 @@ export default function About() {
                 </div>
               </div>
             </div>
-            <div className="py-20">
+            <div className="lg:py-20">
               <img src="/assets/images/about.png" alt="about" />
             </div>
           </div>
@@ -82,7 +82,7 @@ export default function About() {
       <div>
   
       </div>
-      <div className="grid  my-40 lg:grid-cols-2 max-w-[80rem] mx-auto">
+      <div className="grid  lg:my-40 lg:grid-cols-2 max-w-[80rem] mx-auto">
         <div className="mx-2 lg:px-3">
           <img
             src="/assets/images/about2.png"
@@ -232,9 +232,9 @@ export default function About() {
               alt="cook"
               className="rounderd w-full"
             />
-            <div className="bg-gray-100 rounded lg:p-8 p-15 lg:ml-5 absolute -bottom-8 right-0 text-black hover:bg-[#ff5600] hover:text-white duration-300 cursor-pointer">
-              <p className="poppins-medium text-gray-500">23 Dec,2020</p>
-              <p className="josefin-sans lg:text-[20px] text-[18px]">
+            <div className="bg-gray-100 rounded lg:p-8 p-15 lg:ml-5  absolute -bottom-8 right-0 text-black hover:bg-[#ff5600]  duration-300 cursor-pointer group">
+              <p className="poppins-medium group-hover:text-white group-hover:">23 Dec,2020</p>
+              <p className="josefin-sans lg:text-[20px] text-[18px] group-hover:text-white">
                 Addiction When Food Plate Becomes
               </p>
             </div>
@@ -245,9 +245,9 @@ export default function About() {
               alt="cook"
               className="rounderd w-full"
             />
-            <div className="bg-gray-100 rounded lg:p-8 p-15 lg:ml-5 absolute -bottom-8 right-0 text-black hover:bg-[#ff5600] hover:text-white duration-300 cursor-pointer">
-              <p className="poppins-medium text-gray-500">23 Dec,2020</p>
-              <p className="josefin-sans lg:text-[20px] text-[18px]">
+            <div className="bg-gray-100 rounded lg:p-8 p-15 lg:ml-5  absolute -bottom-8 right-0 text-black hover:bg-[#ff5600]  duration-300 cursor-pointer group">
+              <p className="poppins-medium group-hover:text-white group-hover:">23 Dec,2020</p>
+              <p className="josefin-sans lg:text-[20px] text-[18px] group-hover:text-white">
                 Addiction When Food Plate Becomes
               </p>
             </div>
@@ -258,9 +258,9 @@ export default function About() {
               alt="cook"
               className="rounderd w-full"
             />
-            <div className="bg-gray-100 rounded lg:p-8 p-15 lg:ml-5  absolute -bottom-8 right-0 text-black hover:bg-[#ff5600] hover:text-white duration-300 cursor-pointer">
-              <p className="poppins-medium text-gray-500">23 Dec,2020</p>
-              <p className="josefin-sans lg:text-[20px] text-[18px]">
+            <div className="bg-gray-100 rounded lg:p-8 p-15 lg:ml-5  absolute -bottom-8 right-0 text-black hover:bg-[#ff5600]  duration-300 cursor-pointer group">
+              <p className="poppins-medium group-hover:text-white group-hover:">23 Dec,2020</p>
+              <p className="josefin-sans lg:text-[20px] text-[18px] group-hover:text-white">
                 Addiction When Food Plate Becomes
               </p>
             </div>
