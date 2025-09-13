@@ -6,6 +6,12 @@
   font-weight: 500;
   font-style: normal;
 }
+.josefin-sans-bold {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
 
 .josefin-medium {
   font-family: "Josefin Sans", sans-serif;

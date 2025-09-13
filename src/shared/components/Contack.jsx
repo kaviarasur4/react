@@ -1,15 +1,28 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import Loading from './Loading';
 
 export default function Contack() {
+
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const timer = setTimeout(() => setLoading(false), 2000);
+        return () => clearTimeout(timer);
+    }, []);
+
+    if (loading) {
+        return <Loading />;
+    }
     return (
         <div>
+
             <div className="bg-[url('/assets/images/h1.png')] h-130 w-full bg-no-repeat bg-center  lg:mt-20 mt-5">
                 <div className='max-w-[1800px] h-full mx-auto flex justify-start items-center'>
-                    <h2 className='josefin-sans text-[50px] mx-3'>Contact Us</h2>
+                    <h2 className='josefin-sans text-[50px] lg:ml-40 ml-10'>Contact Us</h2>
                 </div>
             </div>
             <div className='ml-2 mb-9 mx-3'>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31228.71075686604!2d79.47890899498661!3d11.933675900821617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5356c0727b6b77%3A0x2c8815a4b312e5f3!2sViluppuram%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1756999352980!5m2!1sen!2sin" className='w-full h-70'/>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31228.71075686604!2d79.47890899498661!3d11.933675900821617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5356c0727b6b77%3A0x2c8815a4b312e5f3!2sViluppuram%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1756999352980!5m2!1sen!2sin" className='w-full h-70' />
             </div>
             <div className='max-w-[1400px] h-full mx-auto flex justify-start '>
                 <div>
