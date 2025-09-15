@@ -14,9 +14,13 @@ export default function About() {
   }
   return (
     <div>
-      <div className="bg-[url('/assets/images/hero2.png')] h-130 w-full bg-no-repeat">
-        <div className="max-width-[1300px] flex items-center justify-start h-full lg:ml-50 ml-10">
-          <h2 className="text-[50px] josefin-sans">About US</h2>
+      <div className="bg-[url('/assets/images/hero2.png')] h-screen w-full bg-no-repeat bg-center bg-cover">
+        <div className="max-width-[1400px] flex items-center justify-start h-full lg:mx-40 mx-4">
+          <div className="space-y-6">
+            <p className='text-[#ff5600] poppins-medium'>About Our Journey</p>
+            <h2 className="'lg:text-[100px] md:text-[70px] text-[35px] josefin-sans-bold tracking-tight">Delicious flavors designed to <br />brighten your day</h2>
+            <p className="poppins-regular lg:text-lg md:text-base leading-relaxed">At our restaurant, we blend passion and flavor to craft dishes that celebrate taste and tradition. <br /> Each meal is thoughtfully prepared to bring comfort, joy, and unforgettable moments to your table.</p>
+          </div>
         </div>
       </div>
       <div>
@@ -87,7 +91,7 @@ export default function About() {
 
       </div>
       <div className="grid  lg:my-40 lg:grid-cols-2 max-w-[80rem] mx-auto">
-        <div className="mx-2 lg:px-3">
+        <div className="px-3">
           <img
             src="/assets/images/about2.png"
             alt="cook"
@@ -115,8 +119,8 @@ export default function About() {
       <div className='bg-[url("/assets/images/section2.png")] bg-no-repeat w-full py-30  bg-center'>
         <div className="lg:flex md:flex justify-center  ">
           <div>
-            <p className="text-[#ff5600] lg:text-[20px] text-[20px] mb-10 text-center">
-             Made with Love for Every Family
+            <p className="text-[#ff5600] lg:text-[20px] text-[20px] lg:mb-8 text-center">
+              Made with Love for Every Family
             </p>
             <p className="lg:text-[49px] md:text-[40px] text-[30px] josefin-sans mb-[14px] text-center">
               Book A Table
@@ -181,7 +185,7 @@ export default function About() {
           />
           <p className="josefin-sans text-[25px]">Perfect Cook</p>
           <p className="poppins-medium text-gray-500 lg:text-[18px] text-center">
-           Our perfect cook turns the finest ingredients unforgettable flavors with every dish.
+            Our perfect cook turns the finest ingredients unforgettable flavors with every dish.
           </p>
         </div>
       </div>
@@ -190,10 +194,10 @@ export default function About() {
           <div className="flex justify-end flex-col lg:items-center text-start">
             <div className="">
               <p className="poppins-medium text-[#ff5600] lg:mx-2 lg:text-start mb-3">
-               What Makes Us Special
+                What Makes Us Special
               </p>
               <p className="lg:text-[45px] text-[25px] lg:mx-2 josefin-sans mb-[14px] ">
-               Flavors Your Family Will Cherish
+                Flavors Your Family Will Cherish
               </p>
               <p className="poppins-medium text-[16px]  text-gray-700 pb-5 lg:mx-2 ">
                 We create an inviting atmosphere where families can gather, laugh,
@@ -216,7 +220,7 @@ export default function About() {
       </div>
       <div className="py-25 text-center">
         <p className="poppins-medium text-[#ff5600] lg:py-5 py-1">
-         Fresh News & Insights
+          Fresh News & Insights
         </p>
         <p className="lg:text-[45px] text-[25px] josefin-sans mb-[50px]">
           Latest Happenings
@@ -228,10 +232,10 @@ export default function About() {
               alt="cook"
               className="rounderd w-full"
             />
-            <div className="bg-gray-100 rounded lg:p-10 p-15 lg:ml-5  absolute -bottom-8 right-0 text-black hover:bg-[#ff5600]  duration-300 cursor-pointer group">
+            <div className="bg-gray-100 rounded lg:p-10 px-18 py-10 lg:ml-5  absolute -bottom-8 right-0 text-black hover:bg-[#ff5600]  duration-300 cursor-pointer group">
               <p className="poppins-medium group-hover:text-white group-hover:">23 Dec,2020</p>
               <p className="josefin-sans lg:text-[18px] text-[18px] group-hover:text-white">
-               Plates That Spark Cravings
+                Plates That Spark Cravings
               </p>
             </div>
           </div>
@@ -241,7 +245,7 @@ export default function About() {
               alt="cook"
               className="rounderd w-full"
             />
-            <div className="bg-gray-100 rounded lg:p-10 p-15 lg:ml-5  absolute -bottom-8 right-0 text-black hover:bg-[#ff5600]  duration-300 cursor-pointer group">
+            <div className="bg-gray-100 rounded lg:p-10 px-18 py-10 lg:ml-5 absolute -bottom-8 right-0 text-black hover:bg-[#ff5600]  duration-300 cursor-pointer group">
               <p className="poppins-medium group-hover:text-white group-hover:">26 mar,2024</p>
               <p className="josefin-sans lg:text-[18px] text-[18px] group-hover:text-white">
                 Cravings Served on a Plate
@@ -254,10 +258,10 @@ export default function About() {
               alt="cook"
               className="rounderd w-full"
             />
-            <div className="bg-gray-100 rounded lg:p-10 p-15 lg:ml-5  absolute -bottom-8 right-0 text-black hover:bg-[#ff5600]  duration-300 cursor-pointer group">
+            <div className="bg-gray-100 rounded lg:p-10 px-18 py-10 lg:ml-5 absolute -bottom-8 right-0 text-black hover:bg-[#ff5600]  duration-300 cursor-pointer group">
               <p className="poppins-medium group-hover:text-white group-hover:">31 Dec,2026</p>
               <p className="josefin-sans lg:text-[18px] text-[18px] group-hover:text-white">
-               Where Every Bite Hooks You
+                Where Every Bites to a You
               </p>
             </div>
           </div>

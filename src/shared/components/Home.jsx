@@ -25,7 +25,7 @@ export default function Home() {
                         <p className='lg:text-[100px] md:text-[70px] text-[35px] josefin-sans-bold tracking-tight'>We belive good food <br />offer great smile</p>
                         <p className='poppins-regular lg:text-lg md:text-base leading-relaxed'>Immerse yourself in an elegant and contemporary setting where each dish is thoughtfully <br />
                             crafted and every detail is designed to create a refined and memorable dining experience.</p>
-                        <p className='poppins-medium bg-[#ff5600] rounded border-1 w-fit p-5 text-white'>Resurvation</p>
+                        <button className='poppins-medium bg-[#ff5600] rounded border-1 w-fit p-5 text-white hover:bg-white hover:text-[#ff5600] cursor-pointer duration-300'>Resurvation</button>
                     </div>
                 </div>
             </div>
@@ -60,22 +60,21 @@ export default function Home() {
 
                             </div>
                         </div>
-                        <div className='py-20'><img src="/assets/images/about.png" alt="about" /></div>
+                        <div className='lg:py-20'><img src="/assets/images/about.png" alt="about" /></div>
                     </div>
                 </div>
             </div>
             <div>
-                <div className="bg-[url('/assets/images/section.png')] h-100 w-full bg-no-repeat bg-center flex justify-center">
-                    <div className='mt-20'>
+                <div className="bg-[url('/assets/images/section.png')] lg:h-100 h-60 w-full bg-no-repeat bg-center flex justify-center">
+                    <div className='lg:mt-20 mt-10'>
                         <p className='text-[#ff5600] text-center lg:text-[25px] text-[15px] lg:mb-5'>Our Offerd Menu</p>
                         <p className='lg:text-[45px] text-[25px] josefin-medium text-center'>Some Trendy And Popular <br /> Courses Offerd</p>
                         <div className='flex justify-center mt-5'>
                             <div className='poppins-medium lg:text-[20px] text-[15px] flex lg:gap-20 gap-5 items-center lg:flex-row flex-'>
                                 <p className='bg-[#ff5600] px-4 py-2 text-white'>Special</p>
-                                <p className=''>Brakefirst</p>
+                                <p className=''>Breakfast</p>
                                 <p className=''>Lunch</p>
                                 <p className=''>Dinner</p>
-
                             </div>
                         </div>
                     </div>
@@ -87,7 +86,7 @@ export default function Home() {
                         <div className='group-hover:opacity-100 opacity-0 duration-300 group-hover:-translate-y-12'>
                             <p className='text-[#ff5600] lg:text-[30px] text-[15px] '>$ 100</p>
                             <p className='text-white poppins-medium lg:text-[50px] text-[20px]'>Royal Feast</p>
-                            <p className='text-white josfin-medium mb-10'>Opulent banquet with exquisite dishes and delicacies.</p>
+                            <p className='text-white josfin-medium mb-10'>Opulent banquet with brexquisite <br /> dishes and delicacies.</p>
                             <button className='p-3 bg-[#ff5600] text-white hover:text-gray-400 cursor-pointer duration-300 rounded'>Order now</button>
                         </div>
                     </div>
@@ -125,7 +124,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className='grid  my-40 lg:grid-cols-2 max-w-[80rem] mx-auto'>
+            <div className='grid  lg:my-40 my-10 lg:grid-cols-2 max-w-[80rem] mx-auto'>
                 <div className='mx-2 lg:px-3'>
                     <img src="/assets/images/about2.png" alt="cook" className='w-[570px] h-[630px]' />
                 </div>
@@ -192,7 +191,7 @@ export default function Home() {
                     <p className='poppins-medium text-gray-500 lg:text-[18px] text-center'>Our perfect cook turns the finest ingredients unforgettable flavors with every dish.</p>
                 </div>
             </div>
-            <div className='bg-[url("assets/images/section4.png")] w-full h-[700px] '>
+            <div className='bg-[url("assets/images/section4.png")] w-full h-[600px] '>
                 <div className='lg:max-w-[1000px] max-w-[500px] mx-auto lg:py-50 py-30 lg:ml-200 ml-3 mr-3'>
                     <div className='flex justify-end flex-col lg:items-center text-start'>
                         <div className="">
@@ -214,7 +213,7 @@ export default function Home() {
                 <div className='flex lg:flex-row flex-col lg:gap-8 justify-center lg:px-8 px-2'>
                     <div className='relative lg:mb-30 mb-15'>
                         <img src="/assets/images/blog1.png" alt="cook" className='rounderd w-full' />
-                        <div className="bg-gray-100 rounded lg:p-8 p-15 lg:ml-5  absolute -bottom-8 right-0 text-black hover:bg-[#ff5600]  duration-300 cursor-pointer group">
+                        <div className="bg-gray-100 rounded lg:p-8 p-10 lg:ml-5  absolute -bottom-8 right-0 text-black hover:bg-[#ff5600]  duration-300 cursor-pointer group">
                             <p className="poppins-medium group-hover:text-white group-hover:">23 Dec,2020</p>
                             <p className="josefin-sans lg:text-[20px] text-[18px] group-hover:text-white">
                                 Irresistible Flavors on Your Plate
@@ -223,7 +222,7 @@ export default function Home() {
                     </div>
                     <div className='relative  lg:mb-30 mb-15'>
                         <img src="/assets/images/blog2.png" alt="cook" className='rounderd w-full' />
-                        <div className="bg-gray-100 rounded lg:p-8 p-15 lg:ml-5  absolute -bottom-8 right-0 text-black hover:bg-[#ff5600]  duration-300 cursor-pointer group">
+                        <div className="bg-gray-100 rounded lg:p-8 p-10 lg:ml-5  absolute -bottom-8 right-0 text-black hover:bg-[#ff5600]  duration-300 cursor-pointer group">
                             <p className="poppins-medium group-hover:text-white group-hover:">02 May,2022</p>
                             <p className="josefin-sans lg:text-[20px] text-[18px] group-hover:text-white">
                                 Bites That Keep You Coming Back
@@ -232,7 +231,7 @@ export default function Home() {
                     </div>
                     <div className='relative  lg:mb-30 mb-15'>
                         <img src="/assets/images/blog3.png" alt="cook" className='rounderd w-full' />
-                        <div className="bg-gray-100 rounded lg:p-8 p-15 lg:ml-5  absolute -bottom-8 right-0 text-black hover:bg-[#ff5600]  duration-300 cursor-pointer group">
+                        <div className="bg-gray-100 rounded lg:p-8 p-10 lg:ml-5  absolute -bottom-8 right-0 text-black hover:bg-[#ff5600]  duration-300 cursor-pointer group">
                             <p className="poppins-medium group-hover:text-white group-hover:">06 Sept,2024</p>
                             <p className="josefin-sans lg:text-[20px] text-[18px] group-hover:text-white">
                                When Hunger Meets Happiness
