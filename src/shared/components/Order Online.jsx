@@ -44,16 +44,16 @@ export default function Orderonline() {
             <p className='lg:text-[35px] text-[20px] josefin-medium '>Meal Delivery Order Form</p>
             <p className='mb-1'>Name:</p>
             <div className='space-x-10 '>
-              <input type='text' className='border-1 rounded p-1 focus:outline-0 md:mb-0 mb-2 w-full' placeholder='Name' onChange={handleChange} value={formData.Name} id='Name' />
+              <input type='text' className='border-1 rounded p-1 focus:outline-0 md:mb-0 mb-2 w-full'required placeholder='Name' onChange={handleChange} value={formData.Name} id='Name' />
              
             </div>
             <div className='text-[#ff5600]'>
               <p>Phone No:</p>
-              <input type="tel" className='w-full border-1 rounded focus:outline-0 p-1' onChange={handleChange} value={formData.Phone_no} id='Phone_no' />
+              <input type="tel" className='w-full border-1 rounded focus:outline-0 p-1 ' required onChange={handleChange} value={formData.Phone_no} id='Phone_no' />
             </div>
             <div className='text-[#ff5600]'>
               <p>Delivery Address:</p>
-              <input type="text" className='focus:outline-0 border-1 p-1 rounded w-full' onChange={handleChange} value={formData.Delivery_Address} id='Delivery_Address' />
+              <input type="text" className='focus:outline-0 border-1 p-1 rounded w-full ' required onChange={handleChange} value={formData.Delivery_Address} id='Delivery_Address' />
             </div>
             <div className='p-2'>
               <div className='flex  items-center  '>
@@ -65,7 +65,7 @@ export default function Orderonline() {
                 </div>
                 <div className=''>
                   <p className=' text-[20px] mb-1'>Quality:</p>
-                  <input type="tel" placeholder='Enter' className='border max-w-[70px] text-center focus:outline-0 rounded-3xl' onChange={handleChange} value={formData.Quality} id='Quality' />
+                  <input type="tel" placeholder='Enter' className='border max-w-[70px] text-center focus:outline-0 rounded-3xl ' required onChange={handleChange} value={formData.Quality} id='Quality' />
                   <p>Vegetarian Bean Chili</p>
                 </div>
               </div>
@@ -78,7 +78,7 @@ export default function Orderonline() {
                 </div>
                 <div className=''>
                   <p className=' text-[20px] mb-1'>Quality:</p>
-                  <input type="tel" placeholder='Enter' className='border max-w-[70px] text-center focus:outline-0 rounded-3xl' onChange={handleChange} value={formData.Quality} id='Quality' />
+                  <input type="tel" placeholder='Enter' className='border max-w-[70px] text-center focus:outline-0 rounded-3xl ' required onChange={handleChange} value={formData.Quality} id='Quality' />
                   <p>Chicken Chili</p>
                 </div>
               </div>
@@ -91,13 +91,13 @@ export default function Orderonline() {
                 </div>
                 <div className=''>
                   <p className=' text-[20px] mb-1'>Quality:</p>
-                  <input type="tel" placeholder='Enter' className='border max-w-[70px] text-center focus:outline-0 rounded-3xl' onChange={handleChange} value={formData.Quality} id='Quality' />
+                  <input type="tel" placeholder='Enter' className='border max-w-[70px] text-center focus:outline-0 rounded-3xl' required onChange={handleChange} value={formData.Quality} id='Quality' />
                   <p>Smoked Honey Maple Ham</p>
                 </div>
               </div>
             </div>
             <button className=' flex justify-center text-josefin-sans mx-auto' >
-              <p className='bg-[#ff5600] hover:text-[#ff5600] text-white p-2 rounded-2xl' >Summit Form</p>
+              <p className='bg-[#ff5600] text-white hover:bg-black/50 hover:text-[#ff5600] p-2 rounded-2xl ' >Summit Form</p>
             </button>
           </div>
 
