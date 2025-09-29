@@ -3,7 +3,7 @@ import { ChefHat, Star, Clock, MapPin, Phone, Mail, Instagram, Facebook, Twitter
 
 const RestaurantWebsite = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState('home');
+  const [, setActiveSection] = useState('home');
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {

@@ -30,7 +30,7 @@ import { Link } from 'react-router-dom';
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
     return (
-        <header className='fixed top-0 py-5 px-5 bg-white w-full z-20 shodow-md'>
+        <header className='sticky top-0 py-5 px-5 bg-white w-full z-20 shadow-2xl'>
             <div className="flex justify-between max-w-[1700px] mx-auto items-center">
                 <img src="/assets/images/logo.webp" alt="logo" className="w-25" />
                 <button
@@ -49,9 +49,13 @@ export default function Header() {
                         <Link to="/contack" className="hover:text-[#ff5600] cursor-pointer">
                             Contact
                         </Link>
-                        <button className="border border-[#ff5600] rounded-lg p-3 cursor-pointer text-gray-400 text-[17px]">
+                        <Link to="/Order_Online" className="border border-[#ff5600] rounded-lg p-3 cursor-pointer text-gray-400 text-[17px] hover:text-[#ff5600]">
                             Order Online
-                        </button>
+                        </Link>
+                        {/* <Link to="/RestaurantWebsite" className="border border-[#ff5600] rounded-lg p-3 cursor-pointer text-gray-400 text-[17px] hover:text-[#ff5600]">
+                            RestaurantWebsite
+                        </Link> */}
+                    
                     </nav>
                 </div>
             </div>
@@ -71,9 +75,9 @@ export default function Header() {
                         >
                             Contact
                         </Link>
-                        <button className="border border-[#ff5600] rounded-lg px-4 py-2 text-gray-400 text-[17px]">
+                        <Link to="/Order_Online" className="border border-[#ff5600] rounded-lg px-4 py-2 text-gray-400  text-[17px]" onClick={() => setIsOpen(false)}>
                             Order Online
-                        </button>
+                        </Link>
                     </nav>
                 </div>
             )}

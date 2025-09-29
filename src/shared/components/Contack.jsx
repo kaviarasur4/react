@@ -4,6 +4,27 @@ import Loading from './Loading';
 export default function Contack() {
 
     const [loading, setLoading] = useState(true);
+    const [formData, setFormData] = useState({
+        message: '',
+        name: '',
+        email: '',
+        subject: ''
+    });
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.id]: e.target.value });
+    };
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const { message, name, email, subject } = formData;
+        const phoneNumber = '+919345263517';
+        const whatsappMessage = `** Contact Request **
+* Name: ${name}
+* Email: ${email}
+* Subject: ${subject}
+* Message: ${message}`;
+        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+        window.open(whatsappUrl);
+    };
 
     useEffect(() => {
         const timer = setTimeout(() => setLoading(false), 2000);
@@ -32,18 +53,18 @@ export default function Contack() {
                 <div>
                     <p className='josefin-sans lg:text-[25px] text-2xl lg:py-5 px-3'>Get in Touch</p>
                     <div className='flex lg:flex-row flex-col lg:gap-20'>
-                        <form className='pb-5 flex flex-col lg:w-[900px] mx-3 '>
+                        <form className='pb-5 flex flex-col lg:w-[900px] mx-3' onSubmit={handleSubmit}>
                             <div>
-                                <textarea className='border-gray-200 border-1 focus:outline-0 pb-30 w-full p-3' placeholder='Enter Message'></textarea>
                                 <div className='flex w-full'>
                                     <div className='mr-4 mb-2 w-full'>
-                                        <input type="text" className=' border-gray-200 border-1 focus:outline-0  w-full p-3 ' required placeholder='Enter Your Name' />
+                                        <input type="text" className=' border-gray-200 border-1 focus:outline-0  w-full p-3 ' required placeholder='Enter Your Name' onChange={handleChange} value={formData.name} id='name' />
                                     </div>
                                     <div className='w-full'>
-                                        <input type="text" className=' border-gray-200 border-1 focus:outline-0  w-full p-3' placeholder='Enter Gmail Address' />
+                                        <input type="text" className=' border-gray-200 border-1 focus:outline-0  w-full p-3' placeholder='Enter Gmail Address' onChange={handleChange} value={formData.email} id='email' />
                                     </div>
                                 </div>
-                                <input type="text" className=' border-gray-200 border-1 focus:outline-0 p-3 w-full mb-2' placeholder='Enter Subject' />
+                                <input type="text" className=' border-gray-200 border-1 focus:outline-0 p-3 w-full mb-2' placeholder='Enter Subject' onChange={handleChange} value={formData.subject} id='subject' />
+                                <textarea className='border-gray-200 border-1 focus:outline-0 pb-30 w-full p-3' placeholder='Enter Message' onChange={handleChange} value={formData.message} id='message'></textarea>
                             </div>
                             <button type='submit' className='josefin-medium border-1 px-10 py-5 text-[14px] hover:bg-[#ff5600] hover:text-white cursor-pointer duration-300 text-[#ff5600]'>SEND</button>
                         </form>
