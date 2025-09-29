@@ -113,7 +113,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className='bg-[url("/assets/images/gallery4.png")] bg-no-repeat bg-cover bg-center w-full h-[360px] '>
-                        <div className='flex justify-center items-center flex-col h-full group hover:bg-black/50 duration-300'>
+                        <div className='flex justify-center items-center flex-col h-full group hover:bg-black/50 duration-300 lg:p-5 p-3'>
                             <div className='group-hover:opacity-100 opacity-0 duration-300 -translate-y-12'>
                                 <p className='text-[#ff5600] lg:text-[30px] text-[15px]'>$ 25</p>
                                 <p className='text-white poppins-medium lg:text-[30px] text-[20px]'>Roasted Red Pepper</p>
