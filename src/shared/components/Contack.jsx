@@ -10,6 +10,7 @@ export default function Contack() {
         email: '',
         subject: ''
     });
+    // console.log(formData)
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.id]: e.target.value });
     };
@@ -46,12 +47,12 @@ export default function Contack() {
                     </div>
                 </div>
             </div>
-            <div className='mb-9'>
+            <div className='mb-9 ml-1'>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31228.71075686604!2d79.47890899498661!3d11.933675900821617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5356c0727b6b77%3A0x2c8815a4b312e5f3!2sViluppuram%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1756999352980!5m2!1sen!2sin" className='lg:w-full w-[380px] h-70' />
             </div>
             <div className='max-w-[1400px] h-full mx-auto flex justify-start '>
                 <div>
-                    <p className='josefin-sans lg:text-[25px] text-2xl lg:py-5 px-3'>Get in Touch</p>
+                    <p className='josefin-sans lg:text-[25px] text-2xl lg:py-5 px-3 mb-2'>Let’s Connect</p>
                     <div className='flex lg:flex-row flex-col lg:gap-20'>
                         <form className='pb-5 flex flex-col lg:w-[900px] mx-3' onSubmit={handleSubmit}>
                             <div>
@@ -66,7 +67,7 @@ export default function Contack() {
                                 <input type="text" className=' border-gray-200 border-1 focus:outline-0 p-3 w-full mb-2' placeholder='Enter Subject' onChange={handleChange} value={formData.subject} id='subject' />
                                 <textarea className='border-gray-200 border-1 focus:outline-0 pb-30 w-full p-3' placeholder='Enter Message' onChange={handleChange} value={formData.message} id='message'></textarea>
                             </div>
-                            <button type='submit' className='josefin-medium border-1 px-10 py-5 text-[14px] hover:bg-[#ff5600] hover:text-white cursor-pointer duration-300 text-[#ff5600]'>SEND</button>
+                            <button type='submit' className='josefin-medium border-1 px-10 py-5 text-[14px] bg-[#ff5600] text-white cursor-pointer duration-300 hover:text-[#ff5600] hover:bg-white'>SEND</button>
                         </form>
                         <div className='my-3'>
                             <div className='mx-3'>

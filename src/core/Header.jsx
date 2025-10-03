@@ -49,7 +49,7 @@ export default function Header() {
                         <Link to="/contack" className="hover:text-[#ff5600] cursor-pointer">
                             Contact
                         </Link>
-                        <Link to="/Order_Online" className="border border-[#ff5600] rounded-lg p-3 cursor-pointer text-gray-400 text-[17px] hover:text-[#ff5600]">
+                        <Link to="/Order_Online" className="border-1 border-[#ff5600] rounded-2xl px-4 py-2 text-[17px] hover:bg-white hover:text-[#ff5600] cursor-pointer duration-300">
                             Order Online
                         </Link>
                         {/* <Link to="/RestaurantWebsite" className="border border-[#ff5600] rounded-lg p-3 cursor-pointer text-gray-400 text-[17px] hover:text-[#ff5600]">
@@ -75,7 +75,7 @@ export default function Header() {
                         >
                             Contact
                         </Link>
-                        <Link to="/Order_Online" className="border border-[#ff5600] rounded-lg px-4 py-2 text-gray-400  text-[17px]" onClick={() => setIsOpen(false)}>
+                        <Link to="/Order_Online" className="border-1 border-[#ff5600] rounded-lg px-4 py-2 text-[17px] hover:bg-white hover:text-[#ff5600] cursor-pointer duration-300 " onClick={() => setIsOpen(false)}>
                             Order Online
                         </Link>
                     </nav>

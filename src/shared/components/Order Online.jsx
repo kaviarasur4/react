@@ -8,10 +8,14 @@ export default function Orderonline() {
     Phone_no: '',
     Delivery_Address: '',
     Quality: ''
+    
   });
+   console.log(formData)
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.id]: e.target.value });
+   
   };
+    
   const handleSubmit = (e) => {
     e.preventDefault();
     const { Name, Phone_no, Delivery_Address, Quality } = formData;
@@ -21,11 +25,11 @@ export default function Orderonline() {
       *Phone_no: ${Phone_no}
       *Delivery_Address: ${Delivery_Address}
       *Quality: ${Quality}`;
+      
 
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(WhatsappMessage)}`;
     window.open(whatsappUrl);
   };
-
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 2000);
     return () => clearTimeout(timer);
@@ -38,14 +42,13 @@ export default function Orderonline() {
     <div>
       <div className="bg-[url('/assets/images/online.jpg')] h-screen flex justify-center items-center w-full bg-no-repeat bg-center bg-cover">
 
-        <form className='md:mt-0 mt-90 md:mb-0 mb-80 md:px-0 px-1'onSubmit={handleSubmit}>
+        <form className='md:mt-0 mt-80 md:mb-0 mb-80 md:px-0 px-1'onSubmit={handleSubmit}>
 
           <div className='bg-black/70 lg:w-fit rounded-3xl lg:p-6 p-3 text-[#ff5600] '>
             <p className='lg:text-[35px] text-[20px] josefin-medium '>Meal Delivery Order Form</p>
             <p className='mb-1'>Name:</p>
             <div className='space-x-10 '>
-              <input type='text' className='border-1 rounded p-1 focus:outline-0 md:mb-0 mb-2 w-full'required placeholder='Name' onChange={handleChange} value={formData.Name} id='Name' />
-             
+              <input type='text' className='border-1 rounded p-1 focus:outline-0 md:mb-0 mb-2 w-full'required  onChange={handleChange} value={formData.Name} id='Name' />
             </div>
             <div className='text-[#ff5600]'>
               <p>Phone No:</p>

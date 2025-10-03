@@ -3,9 +3,33 @@ import Loading from "./Loading";
 
 export default function About() {
   const [loading, setLoading] = useState(true);
+  const [formData,setFormData] = useState({
+      Name: '',
+      Date: '',
+      Time: ''
+    });
+    console.log(formData)
+
+    const handleChange = (e) => {
+      setFormData({ ...formData, [e.target.id]: e.target.value});
+    };
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      const {Name,Date,Time} = formData;
+
+      const phoneNumber = '+919345263517';
+      const whatsappMessage = `***Contack Request***
+      *Name: ${Name}
+      *Date: ${Date}
+      *Time: ${Time}`;
+
+      const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+      window.open(whatsappUrl)
+    };
 
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 2000);
+
     return () => clearTimeout(timer);
   }, []);
 
@@ -95,7 +119,7 @@ export default function About() {
           <img
             src="/assets/images/about2.png"
             alt="cook"
-            className="w-[570px] h-[630px]"
+            className="w-[570px] h-[600px]"
           />
         </div>
         <div className="mx-2 lg:px-10 px-5">
@@ -116,8 +140,8 @@ export default function About() {
           <button className='bg-white text-gray-500 hover:bg-[#ff5600] hover:text-white border-1 border-[#ff5600] p-4 rounded text-[15px] cursor-pointer'>Learn More</button>
         </div>
       </div>
-      <div className='bg-[url("/assets/images/section2.png")] bg-no-repeat w-full py-30  bg-center'>
-        <div className="lg:flex md:flex justify-center  ">
+      <div className='bg-[url("/assets/images/section2.png")] bg-no-repeat w-full py-30  bg-center mt-5'>
+        <div className="flex lg:flex-col flex-row justify-center  ">
           <div>
             <p className="text-[#ff5600] lg:text-[20px] text-[20px] lg:mb-8 text-center">
               Made with Love for Every Family
@@ -126,22 +150,22 @@ export default function About() {
               Book A Table
             </p>
             <div>
-              <div className="bg-[#ffffff] p-15 rounded">
-                <form className="flex flex-col gap-10 md:flex-row text-gray-500 ">
+              <div className="bg-[#ffffff] lg:p-20 p-5 rounded ml-20 mr-20">
+                <form className="flex lg:flex-row gap-10 flex-col text-gray-500" onSubmit={handleSubmit}>
                   <input
-                    className="bg-gray-200 lg:px-20 px-20 lg:py-5 py-5 rounded  cursor-pointer text-[20px]"
+                    className="bg-gray-200 lg:px-15 px-5 lg:py-5 py-5 rounded  cursor-pointer text-[20px] focus outline-0"
                     type="text"
-                    placeholder="name"
+                    placeholder="Name" required onChange={handleChange} value={formData.Name} id="Name"
                   />
                   <input
-                    className="bg-gray-200 px-20 py-5 rounded cursor-pointer text-[20px]"
+                   className="bg-gray-200 lg:px-15 px-5 lg:py-5 py-5 rounded  cursor-pointer text-[20px] focus outline-0"
                     type="text"
-                    placeholder="date"
+                    placeholder="Date" required onChange={handleChange} value={formData.value} id="Date"
                   />
                   <input
-                    className="bg-gray-200 px-20 py-5 rounded cursor-pointer text-[20px]"
+                    className="bg-gray-200 lg:px-15 px-5 lg:py-5 py-5 rounded  cursor-pointer text-[20px] focus outline-0"
                     type="tel"
-                    placeholder="time"
+                    placeholder="Time" required onChange={handleChange} value={formData.value} id="Time"
                   />
                   <button className="bg-[#ff5600] text-white font-medium px-20 py-5 rounded cursor-pointer text-[20px]">
                     Summit

@@ -5,7 +5,7 @@ export default function Fotter() {
         <div>
             <div>
                 <div className="bg-[url('assets/images/bg02.png')] w-full bg-cover bg-no-repeat">
-                    <div className='grid lg:grid-cols-5 grid-cols-1 gap-10 py-40  mx-2 lg:px-50'>
+                    <div className='grid lg:grid-cols-5 grid-cols-1 gap-10 lg:py-40 py-15  mx-2 lg:px-50'>
                         <div className='flex lg:items-start justify-start'>
                             <img src="/assets/images/logo.webp" alt="logo" />
                         </div>
@@ -30,7 +30,7 @@ export default function Fotter() {
                         </div>
                         <div>
                             <div>
-                                <p className='text-white josefin-sans text-[18px]  bg-gray-600 w-fit mb-5 text-center'>Instagram Feed</p>
+                                <p className='text-white josefin-sans text-[18px]  bg-gray-600 w-fit mb-5 text-center p-1 rounded'>Instagram Feed</p>
                             </div>
                             <div className='flex flex-row'>
                                 <img src="/assets/images/instagram1.png.webp" alt="cook" className='h-[95px] w-[95px] p-1' />

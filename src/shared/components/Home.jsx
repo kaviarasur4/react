@@ -70,11 +70,13 @@ export default function Home() {
                         <p className='text-[#ff5600] text-center lg:text-[25px] text-[15px] lg:mb-5'>Our Offerd Menu</p>
                         <p className='lg:text-[45px] text-[25px] josefin-medium text-center'>Some Trendy And Popular <br /> Courses Offerd</p>
                         <div className='flex justify-center mt-5'>
-                            <div className='poppins-medium lg:text-[20px] text-[15px] flex lg:gap-20 gap-5 items-center lg:flex-row flex-'>
-                                <p className='bg-[#ff5600] px-4 py-2 text-white'>Special</p>
-                                <p className=''>Breakfast</p>
-                                <p className=''>Lunch</p>
-                                <p className=''>Dinner</p>
+                            <div>
+                                <form className='poppins-medium lg:text-[20px] text-[15px] flex lg:gap-20 gap-5 items-center lg:flex-row'>
+                                <button className='bg-[#ff5600] px-4 py-2 text-white cursor-pointer'>Special</button>
+                                <button className=' cursor-pointer'>Breakfast</button>
+                                <button className=' cursor-pointer'>Lunch</button>
+                                <button className=' cursor-pointer'>Dinner</button>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -144,7 +146,7 @@ export default function Home() {
                         <p className='text-[#ff5600] lg:text-[20px] text-[20px] mb-10 text-center'>About Our Restaurant</ p>
                         <p className='lg:text-[49px] md:text-[40px] text-[30px] josefin-sans mb-[14px] text-center'>Book A Table</p>
                         <div>
-                            <div className='bg-[#ffffff] lg:p-15 p-4 rounded'>
+                            <div className='bg-[#ffffff] lg:p-15 p-5 rounded ml-10 mr-10'>
                                 <form className='flex flex-col gap-10 md:flex-row poppins-regular'>
                                     <div className='flex items-center bg-gray-100 px-4 gap-3'>
                                         <img src="assets/images/user.png" alt="user" className='h-4 w-4 ' />
@@ -191,7 +193,7 @@ export default function Home() {
                     <p className='poppins-medium text-gray-500 lg:text-[18px] text-center'>Our perfect cook turns the finest ingredients unforgettable flavors with every dish.</p>
                 </div>
             </div>
-            <div className='bg-[url("assets/images/section4.png")] w-full h-[600px] '>
+            <div className='bg-[url("assets/images/section4.png")] w-full h-[600px] bg-no-repeat'>
                 <div className='lg:max-w-[1000px] max-w-[500px] mx-auto lg:py-50 py-30 lg:ml-200 ml-3 mr-3'>
                     <div className='flex justify-end flex-col lg:items-center text-start'>
                         <div className="">
